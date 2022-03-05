@@ -178,17 +178,24 @@ public class MSButton
         
     }
     
-    public void mouseMoved() {
+    /*public void mouseMoved() {
       if( mouseX > x && mouseX < x + width && mouseY > y && mouseY < y + height) {
         hovering = true;
       }
       else
         hovering = false;
-    }
+    }*/
     
     
     public void draw () 
     {    
+    
+      if( mouseX > x && mouseX < x + width && mouseY > y && mouseY < y + height) {
+        hovering = true;
+      }
+      else
+        hovering = false;
+
 
         if( clicked && mines.contains(this) )  {
             fill(255,0,0);
