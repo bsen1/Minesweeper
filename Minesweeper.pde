@@ -11,7 +11,7 @@ private boolean playing = true;
 private String gameState = "";
 void setup ()
 {
-    PFont myFont = createFont("Lucida Sans Regular", 12);
+    PFont myFont = createFont("Lucida Sans Regular", 20);
     textFont(myFont);
     size(600, 650);
     textSize(20);
